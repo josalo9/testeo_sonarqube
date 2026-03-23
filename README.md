@@ -1,5 +1,4 @@
 # testeo_sonarqube
-Repositorio de prueba para sonarqube con github actions
 
 ## Arquitectura de Infraestructura (IaC con Terraform)
 
