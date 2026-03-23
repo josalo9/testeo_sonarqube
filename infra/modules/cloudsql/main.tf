@@ -4,6 +4,7 @@ resource "google_sql_database_instance" "postgres_instance" {
   database_version = "POSTGRES_13"
   region           = var.region
   project          = var.project_id
+  root_password    = var.db_admin_password
 
   settings {
     tier = "db-f1-micro" # Usar un tier pequeño para desarrollo

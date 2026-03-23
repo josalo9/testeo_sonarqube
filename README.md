@@ -36,7 +36,7 @@ Este proyecto utiliza Terraform para gestionar la infraestructura como código (
     ```bash
     cp terraform.tfvars.example terraform.tfvars
     ```
-    Edita `terraform.tfvars` y establece tu `project_id` y `db_password`.
+    Edita `terraform.tfvars` y establece tu `project_id`, `db_password` y `db_admin_password`.
 
 3.  **Inicializar Terraform**:
     Descarga los proveedores necesarios.
@@ -68,11 +68,11 @@ Una vez que la instancia de Cloud SQL esté creada, puedes aplicar las migracion
     ```
 
 2.  **Ejecutar la migración**:
-    Con el proxy en ejecución en otra terminal, usa `psql` para ejecutar el script de migración.
+    Con el proxy en ejecución en otra terminal, usa `psql` para ejecutar el script de migración. Debes usar el usuario `postgres` y la contraseña de administrador que configuraste.
     ```bash
-    psql "host=127.0.0.1 port=5432 sslmode=disable dbname=user_management_db user=auth_service_user" < ../db/migrations/001_create_users_table.sql
+    psql "host=127.0.0.1 port=5432 sslmode=disable dbname=user_management_db user=postgres" < ../db/migrations/001_create_users_table.sql
     ```
-    Se te pedirá la contraseña de la base de datos que definiste en `terraform.tfvars`.
+    Se te pedirá la contraseña de administrador (`db_admin_password`) que definiste en `terraform.tfvars`.
 
 ### Destruir la Infraestructura
 

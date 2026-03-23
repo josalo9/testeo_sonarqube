@@ -1,3 +1,4 @@
 project_id = "tu-gcp-project-id"
 region     = "us-central1"
 db_password = "una-contraseña-muy-segura"
+db_admin_password = "una-contraseña-de-admin-muy-segura"

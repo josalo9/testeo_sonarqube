@@ -14,3 +14,9 @@ variable "db_password" {
 variable "auth_service_account_email" {
   type = string
 }
+
+variable "db_admin_password" {
+  description = "La contraseña para el usuario administrador 'postgres'."
+  type        = string
+  sensitive   = true
+}

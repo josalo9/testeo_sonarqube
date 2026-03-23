@@ -73,6 +73,7 @@ module "cloudsql" {
   region                     = var.region
   network_id                 = module.networking.vpc_id
   db_password                = var.db_password
+  db_admin_password          = var.db_admin_password
   auth_service_account_email = module.iam.auth_service_sa_email
   depends_on                 = [google_project_service.apis]
 }
