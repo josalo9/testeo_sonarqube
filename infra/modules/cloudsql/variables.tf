@@ -20,3 +20,9 @@ variable "db_admin_password" {
   type        = string
   sensitive   = true
 }
+
+variable "db_admin_password" {
+  description = "La contraseña para el usuario administrador 'postgres'."
+  type        = string
+  sensitive   = true
+}

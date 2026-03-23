@@ -26,3 +26,9 @@ variable "db_admin_password" {
   type        = string
   sensitive   = true
 }
+
+variable "db_admin_password" {
+  description = "La contraseña para el usuario administrador 'postgres' de Cloud SQL. Debe ser proporcionada de forma segura."
+  type        = string
+  sensitive   = true
+}
