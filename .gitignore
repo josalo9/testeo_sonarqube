@@ -1,1 +1,28 @@
 .aider*
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfplan
+
+# Archivos de entorno
+.env
+*.env.*
+!.env.example
+
+# Go
+/vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/functions/ingestion_orchestrator/ingestion_orchestrator
+
+# Mac
+.DS_Store
+
+# Temp files
+/tmp

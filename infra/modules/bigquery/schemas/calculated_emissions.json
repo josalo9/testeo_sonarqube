@@ -1,0 +1,37 @@
+[
+  {
+    "name": "shipment_id",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "shipment_date",
+    "type": "DATE",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "provider_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "transport_mode",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "co2_emissions",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "data_quality_flag",
+    "type": "BOOLEAN",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "trace_context",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
